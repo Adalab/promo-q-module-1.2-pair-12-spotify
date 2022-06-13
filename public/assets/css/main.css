@@ -1,17 +1,7 @@
-/* reset styles */
 * {
   box-sizing: border-box;
-  font-family: Circular, Arial, Helvetica, sans-serif;
-  font-size: 16px;
   margin: 0;
   padding: 0; }
-
-a {
-  color: white;
-  text-decoration: none; }
-
-body {
-  margin: 0; }
 
 /* header */
 .header {
@@ -49,18 +39,36 @@ body {
 .link-signup:before {
   padding-left: 4px;
   content: '|';
-  color: white; }
+  color: #f3f4f5; }
 
-/* main */
-.main {
-  margin-top: 60px;
-  /* esto es lo que mide el header */ }
+/* footer */
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 15px;
+  background-color: black; }
+
+.footer,
+.footer * {
+  font-size: 10px;
+  color: #999; }
+
+.footer-menu-links:hover {
+  color: #f3f4f5; }
+
+.footer-menu-items {
+  display: inline-block; }
+
+.footer-menu-links {
+  display: inline-block;
+  padding: 7px; }
 
 /* hero area */
 .hero {
   padding: 60px 30px 30px 30px;
   background-color: #0691ff;
-  color: white;
+  color: #f3f4f5;
   height: 50vh; }
 
 .hero-title {
@@ -88,55 +96,25 @@ body {
   margin-top: 30px;
   font-size: 10px; }
 
-/* benefits area */
-.benefits-title {
-  margin-top: 50px;
-  text-align: center;
-  font-size: 35px; }
+/* reset styles */
+* {
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  margin: 0;
+  padding: 0; }
 
-.benefits {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  margin: 50px auto;
-  max-width: 400px; }
+a {
+  color: #f3f4f5;
+  text-decoration: none; }
 
-/* benefit item */
-.benefit {
-  display: flex;
-  align-items: left;
-  padding: 10px; }
+body {
+  margin: 0; }
 
-.benefit-img {
-  margin: 15px;
-  width: 100px; }
-
-.benefit-title {
-  font-size: 1.25rem;
-  line-height: 25px; }
-
-/* footer */
-.footer {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-  padding: 15px;
-  background-color: black; }
-
-.footer,
-.footer * {
-  font-size: 10px;
-  color: #999; }
-
-.footer-menu-links:hover {
-  color: white; }
-
-.footer-menu-items {
-  display: inline-block; }
-
-.footer-menu-links {
-  display: inline-block;
-  padding: 7px; }
+/* main */
+.main {
+  margin-top: 60px;
+  /* esto es lo que mide el header */ }
 
 /* copy */
 .copy {
