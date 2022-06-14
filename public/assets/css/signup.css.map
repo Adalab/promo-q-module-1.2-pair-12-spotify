@@ -1,1 +1,1 @@
-{"version":3,"sources":["signup.scss"],"names":[],"mappings":"AAAA;EACE,qBAAqB,EAAA","file":"signup.css","sourcesContent":["header {\r\n  background-color: red;\r\n}\r\n"]}
+{"version":3,"sources":["signup.scss"],"names":[],"mappings":"AAAA;EACE,sBAAsB,EAAA;;AAGxB;EACE,aAAa;EACb,sBAAsB;EACtB,SAAS,EAAA","file":"signup.css","sourcesContent":["header {\r\n  background-color: pink;\r\n}\r\n\r\n.formulario {\r\n  display: flex;\r\n  flex-direction: column;\r\n  gap: 1rem;\r\n}\r\n"]}
