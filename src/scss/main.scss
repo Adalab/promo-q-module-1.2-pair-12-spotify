@@ -1,99 +1,94 @@
- @import 'core/variables';
- @import 'core/reset';
+@import "core/variables";
+@import "core/reset";
 // @import 'components/code';
 // @import 'components/links';
- //@import 'layout/page';
- @import 'layout/header';
- @import 'layout/footer';
+//@import 'layout/page';
+@import "layout/header";
+@import "layout/footer";
 // @import 'pages/index';
-@import 'layout/_hero.scss';
-@import 'layout/_benefits.scss'
+@import "layout/hero";
+@import "layout/benefits";
 
-/* reset styles */
-
+// /* reset styles */
 * {
-    box-sizing: border-box;
-    font-family: $font-main;
-    font-size: 16px;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  font-family: $font-main;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: $color-bg;
+  text-decoration: none;
+}
+
+body {
+  margin: 0;
+}
+
+/* main */
+
+.main {
+  margin-top: 60px; /* esto es lo que mide el header */
+}
+
+/* copy */
+
+.copy {
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+}
+
+.copy-year {
+  margin-top: 5px;
+}
+
+.copy-spain-flag {
+  margin-left: 5px;
+  height: 15px;
+  vertical-align: text-bottom;
+}
+
+/* media queries */
+
+@media all and (min-width: 768px) {
+  .hero {
+    background-image: url(../images/premium-dancer.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-x: right;
   }
-  
-  a {
-    color: $color-bg;
-    text-decoration: none;
+  .hamb {
+    display: none;
   }
-  
-  body {
-    margin: 0;
+  .nav {
+    display: block;
   }
-  
- 
-  /* main */
-  
-  .main {
-    margin-top: 60px; /* esto es lo que mide el header */
+  .hero-title {
+    margin-top: 100px;
   }
-  
-  
-  
-  /* copy */
-  
-  .copy {
-    display: flex;
-    flex-direction: column;
-    text-align: right;
+  .benefits {
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 700px;
   }
-  
-  .copy-year {
-    margin-top: 5px;
+
+  .benefit {
+    width: 50%;
   }
-  
-  .copy-spain-flag {
-    margin-left: 5px;
-    height: 15px;
-    vertical-align: text-bottom;
+}
+
+@media all and (min-width: 1200px) {
+  .benefits {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    max-width: 1000px;
   }
-  
-  /* media queries */
-  
-  @media all and (min-width: 768px) {
-  
-    .hero {
-      background-image: url(../images/premium-dancer.png);
-      background-size: contain;
-      background-repeat: no-repeat;
-      background-position-x: right;
-    }
-    .hamb{
-      display: none;
-    }
-    .nav{
-      display: block;
-    }
-    .hero-title {
-      margin-top: 100px;
-    }
-    .benefits {
-      flex-direction: row;
-      justify-content: center;
-      flex-wrap: wrap;
-      max-width: 700px;
-    }
-  
-    .benefit {
-      width: 50%;
-    }
+
+  .benefit {
+    display: block;
   }
-  
-  @media all and (min-width: 1200px) {
-    .benefits {
-      flex-direction: row;
-      flex-wrap: nowrap;
-      max-width: 1000px;
-    }
-  
-    .benefit {
-      display: block;
-    }
-  }
+}
