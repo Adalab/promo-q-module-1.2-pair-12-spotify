@@ -69,16 +69,16 @@ body {
   .hero-title {
     margin-top: 100px;
   }
-  .benefits {
-    flex-direction: row;
-    justify-content: center;
-    flex-wrap: wrap;
-    max-width: 700px;
-  }
+  // .benefits {
+  //   flex-direction: row;
+  //   justify-content: center;
+  //   flex-wrap: wrap;
+  //   max-width: 700px;
+  // }
 
-  .benefit {
-    width: 50%;
-  }
+  // .benefit {
+  //   width: 50%;
+  // }
 }
 
 @media all and (min-width: 1200px) {
